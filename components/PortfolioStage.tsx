@@ -2,7 +2,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import { businesses, Business } from "../data/site";
+import { businesses } from "../data/site";
+import type { Business } from "../data/site";
 
 function WebsitePreview({ item }: { item: Business }) {
   return <div className={`website-preview ${item.className}`}>
