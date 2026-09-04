@@ -1,0 +1,23 @@
+KVN GROUP CORPORATE SITE
+
+Permanent local project folder:
+C:\PROJECTS\kvnhospitality
+
+Normal workflow:
+1. Keep node_modules in the project.
+2. Copy updated project files from future ZIPs into C:\PROJECTS\kvnhospitality and replace existing files.
+3. Do NOT delete node_modules.
+4. Run: npm run dev
+5. Open: http://localhost:3000
+
+Run npm install again only when package.json/package-lock.json or dependencies change.
+
+Business portfolio cards now include:
+- Live website preview iframe for Varadaraja Cinemas
+- Live website preview iframe for KVN Weddings & Conventions
+- Business logos sourced from the corresponding KVN GitHub repositories
+- Direct Visit Website links
+
+Current business URLs:
+https://varadarajacinemas.vercel.app
+https://kvnweddingsandconventions.com
