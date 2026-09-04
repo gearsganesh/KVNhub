@@ -8,13 +8,7 @@ export const values=[
 ["02","Sustainable Growth","We favour durable businesses, thoughtful expansion and decisions that create value beyond the next quarter."],
 ["03","Meaningful Experiences","Places and services matter most when they become part of people's memories and everyday lives."],
 ["04","A Brighter Tomorrow","We keep building forward, combining experience with new ideas, better systems and responsible ambition."]];
-export const capabilities=[
-["Ideas","Identify opportunities where KVN can create a differentiated customer proposition."],
-["Investments","Build and support businesses with a long-term view of value, quality and resilience."],
-["Infrastructure","Develop the places, systems and operating foundations that allow experiences to scale."],
-["Experiences","Turn destinations into brands people remember, return to and recommend."],
-["People","Bring together capable teams, partners and communities around a shared standard."]];
 export const milestones=[
 ["1979","A legacy begins","The Varadaraja cinema journey takes root in Chennai, establishing a long-running connection with audiences."],
 ["TODAY","A focused portfolio","KVN brings together entertainment and hospitality through Varadaraja Cinemas and KVN Weddings & Conventions."],
-["NEXT","A brighter tomorrow","The next chapter is about building carefully across ideas, investments, infrastructure, experiences and people."]];
+["NEXT","A brighter tomorrow","The next chapter is about building carefully around people, places, experiences and responsible ambition."]];
