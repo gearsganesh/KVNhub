@@ -1,5 +1,6 @@
 import { ArrowUpRight, Building2, Mail, MapPin } from "lucide-react";
 import PortfolioStage, { WebsitePreview } from "../components/PortfolioStage";
+import GroupLogo from "../components/GroupLogo";
 import { businesses, milestones, values } from "../data/site";
 
 const valueIcons = ["people", "growth", "experience", "future"];
@@ -7,7 +8,7 @@ const valueIcons = ["people", "growth", "experience", "future"];
 export default function Home() {
   return <main>
     <header className="header"><div className="shell header-inner">
-      <a href="#top" className="brand"><img src="/assets/kvn-group-logo.png" alt="KVN Group" /></a>
+      <a href="#top" className="brand"><GroupLogo alt="KVN Group" /></a>
       <nav><a href="#businesses">Our Businesses</a><a href="#group">The Group</a><a href="#values">Our Values</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav>
       <a className="header-cta" href="#contact">Partner with us <ArrowUpRight size={15}/></a>
     </div></header>
@@ -35,6 +36,6 @@ export default function Home() {
 
     <section className="contact shell" id="contact"><div className="contact-card"><div><div className="section-label">CONNECT WITH KVN</div><h2>Let’s build<br/><em>what people value.</em></h2></div><div className="contact-info"><p>For business partnerships, destination opportunities and group-level enquiries, connect with KVN Group.</p><a className="email" href="mailto:info@kvnhospitality.com">info@kvnhospitality.com <ArrowUpRight size={18}/></a><div className="meta"><span><MapPin size={15}/> Chennai, Tamil Nadu, India</span><span><Building2 size={15}/> Entertainment · Hospitality · Experiences</span><span><Mail size={15}/> Business enquiries</span></div></div></div></section>
 
-    <footer><div className="shell footer-inner"><img src="/assets/kvn-group-logo.png" alt="KVN Group" /><p>© {new Date().getFullYear()} KVN Group. Building a Brighter Tomorrow.</p><div><a href="#businesses">Businesses</a><a href="#values">Values</a><a href="#contact">Contact</a></div></div></footer>
+    <footer><div className="shell footer-inner"><GroupLogo alt="KVN Group" /><p>© {new Date().getFullYear()} KVN Group. Building a Brighter Tomorrow.</p><div><a href="#businesses">Businesses</a><a href="#values">Values</a><a href="#contact">Contact</a></div></div></footer>
   </main>;
 }
