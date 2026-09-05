@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 const PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+const LOGO_SOURCE =
+  "https://raw.githubusercontent.com/gearsganesh/KVNhub/main/public/assets/kvn-group-logo.png";
 
 export default function GroupLogo({
   className = "",
@@ -20,11 +22,10 @@ export default function GroupLogo({
 
     const loadLogo = async () => {
       try {
-        // The repository contains the exact supplied PNG as base64 text.
-        // Decode it in the browser so the original artwork is rendered pixel-for-pixel.
-        const response = await fetch("/assets/kvn-group-logo.png", {
-          cache: "force-cache",
-        });
+        // GitHub stores the exact supplied PNG as base64 text. Decode that
+        // original asset in the browser so the artwork is not recreated or altered.
+        const response = await fetch(LOGO_SOURCE, { cache: "force-cache" });
+        if (!response.ok) throw new Error("Unable to load KVN Group logo");
         const encoded = (await response.text()).replace(/\s/g, "");
         const binary = atob(encoded);
         const bytes = new Uint8Array(binary.length);
@@ -36,7 +37,7 @@ export default function GroupLogo({
         );
         if (!cancelled) setSrc(objectUrl);
       } catch {
-        // Keep the transparent placeholder rather than showing a broken-image icon.
+        // Keep a transparent placeholder rather than showing a broken-image icon.
       }
     };
 
