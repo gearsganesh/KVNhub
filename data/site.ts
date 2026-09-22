@@ -10,5 +10,5 @@ export const values=[
 ["04","A Brighter Tomorrow","We keep building forward, combining experience with new ideas, better systems and responsible ambition."]];
 export const milestones=[
 ["1979","A legacy begins","The Varadaraja cinema journey takes root in Chennai, establishing a long-running connection with audiences."],
-["TODAY","A focused portfolio","KVN brings together entertainment and hospitality through Varadaraja Cinemas and KVN Weddings & Conventions."],
+["TODAY","A focused group","KVN brings together entertainment and hospitality through Varadaraja Cinemas and KVN Weddings & Conventions."],
 ["NEXT","A brighter tomorrow","The next chapter is about building carefully around people, places, experiences and responsible ambition."]];
